@@ -1,0 +1,10 @@
+plusoumoins\Main.class
+plusoumoins\Parameters.class
+plusoumoins\FichierConfigurationException.class
+plusoumoins\modes\Defenseur.class
+plusoumoins\Game.class
+plusoumoins\MetaGame.class
+plusoumoins\modes\Duel.class
+plusoumoins\modes\Challenger.class
+plusoumoins\Engine.class
+plusoumoins\Choose.class
