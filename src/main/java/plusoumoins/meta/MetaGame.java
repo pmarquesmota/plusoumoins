@@ -40,7 +40,7 @@ public class MetaGame {
 		parameters = Parameters.getListeParametres();
 		length = Integer.parseInt(parameters.get("length"));
 		dev = Boolean.parseBoolean(parameters.get("dev"));
-		logger = LogManager.getLogger(MetaGame.class);
+		logger = LogManager.getLogger("main.java");
 	}
 	
 	public static void run() throws IOException, FichierConfigurationException {

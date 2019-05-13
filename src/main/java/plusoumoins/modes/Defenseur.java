@@ -16,21 +16,21 @@ public class Defenseur  extends Game {
         Logger log;
         
         log = MetaGame.getLogger();
-        log.error("Début du mode défenseur");
+        log.info("Début du mode défenseur");
         
         x = Choose.choice("Veuillez saisir un nombre secret à " + MetaGame.length + " chiffres");
-        log.error("Le nombre secret choisi par le joueur est : " + x);
+        log.info("Le nombre secret choisi par le joueur est : " + x);
         
         do {
             guess = Engine.guess(guess, result_string);
         	System.out.println("l'ordinateur essaie : " + guess);
-        	log.error("l'ordinateur essaie : " + guess);
+        	log.info("l'ordinateur essaie : " + guess);
         	
         	result_string = Engine.make_string(x, guess);
             System.out.println("Résultat : " + result_string);
-            log.error("Résultat : " + result_string);
+            log.info("Résultat : " + result_string);
         } while(!result_string.equals(result_guess));
         System.out.println("Gagné !");
-        log.error("L'ordinateur a gagné !");
+        log.info("L'ordinateur a gagné !");
 	}
 }

@@ -11,14 +11,13 @@ import plusoumoins.cli.Choose;
 import plusoumoins.engine.Engine;
 
 public class Challenger extends Game {
-    public static final Logger logger = LogManager.getLogger(Challenger.class);
 
 	public void run() {
         String r = "";
         String nb = "";
         String x = "";
         String result_guess = "";
-        Logger log;
+        Logger logger = MetaGame.getLogger();
         
         logger.info("Début du mode Challenger");
         result_guess = MetaGame.getResult();
