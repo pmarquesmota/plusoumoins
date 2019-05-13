@@ -26,9 +26,8 @@ public class Duel  extends Game {
         log.info("Le nombre secret choisi par le joueur est : " + player_secret);
         
         computer_secret = Engine.getSecret();
-        log.info("Le nombre secret choisi par l'ordinateur est : " + computer_secret);
         if(MetaGame.dev) {
-        	System.out.println("Le nombre secret est : " + computer_secret);
+			log.info("Le nombre secret choisi par l'ordinateur est : " + computer_secret);
         }
         do {
         	computer_play();
@@ -39,12 +38,10 @@ public class Duel  extends Game {
 
 	private void computer_play() {
 		computer_guess = Engine.guess(computer_guess, computer_result_string);
-        System.out.println("l'ordinateur essaie : " + computer_guess);
         log.info("l'ordinateur essaie : " + computer_guess);
         
     	computer_result_string = Engine.make_string(player_secret, computer_guess);
     	
-        System.out.println("Résultat : " + computer_result_string);
         log.info("Résultat : " + computer_result_string);
 	}
 
@@ -52,16 +49,13 @@ public class Duel  extends Game {
         player_guess = Choose.choice("Veuillez saisir un nombre à " + MetaGame.length + " chiffres");
         log.info("le joueur essaie : " + player_guess);
         player_result_string = Engine.make_string(computer_secret, player_guess);
-        System.out.println("Résultat : " + player_result_string);
         log.info("Résultat : " + player_result_string);
 	}
 	
 	private void show_winner() {
         if(player_result_string.equals(result_guess)) {
-        	System.out.println("Vous avez gagné !");
         	log.info("Le joueur a gagné !");
         } else {
-        	System.out.println("L'ordinateur a gagné !");
         	log.info("L'ordinateur a gagné !");
         }
 	}

@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71b3f2b1-2e82-45ec-8f6a-d1d4ec75a860" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/MyLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/MyLogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/plusoumoins/meta/MetaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plusoumoins/meta/MetaGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/plusoumoins/modes/Challenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plusoumoins/modes/Challenger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/plusoumoins/modes/Defenseur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plusoumoins/modes/Defenseur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/plusoumoins/modes/Duel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plusoumoins/modes/Duel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plusoumoins/meta/MetaGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plusoumoins/meta/MetaGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plusoumoins/modes/Defenseur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plusoumoins/modes/Defenseur.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,8 +22,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/modes/Challenger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="492">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/modes/Duel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,10 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/modes/Duel.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/modes/Defenseur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="237">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,20 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/meta/MetaGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/modes/Defenseur.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="35" />
+            <state relative-caret-position="204">
+              <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="136">
               <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
             </state>
           </provider>
@@ -126,10 +120,10 @@
         <option value="$PROJECT_DIR$/src/main/java/plusoumoins/Parameters.java" />
         <option value="$PROJECT_DIR$/src/main/java/plusoumoins/meta/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/plusoumoins/meta/MetaGame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/plusoumoins/modes/Defenseur.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/plusoumoins/modes/Challenger.java" />
         <option value="$PROJECT_DIR$/src/main/java/plusoumoins/modes/Duel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/plusoumoins/modes/Defenseur.java" />
       </list>
     </option>
   </component>
@@ -368,33 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/meta/MetaGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/modes/Defenseur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/meta/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -408,10 +375,27 @@
     <entry file="file://$PROJECT_DIR$/Logs/MyLogs.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/meta/MetaGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/modes/Challenger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="492">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -420,8 +404,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/modes/Duel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="407">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/plusoumoins/modes/Defenseur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

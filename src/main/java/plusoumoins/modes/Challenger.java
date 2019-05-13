@@ -27,19 +27,16 @@ public class Challenger extends Game {
         	x = x + Integer.toString(rand.nextInt(9));
         }
         if(MetaGame.dev) {
-        	System.out.println("Le nombre secret est : " + x);
+            logger.info("Le nombre secret choisi par l'ordinateur est : " + x);
         }
-        logger.info("Le nombre secret choisi par l'ordinateur est : " + x);
-        
+
         do {
             nb = Choose.choice("Veuillez saisir un nombre à " + MetaGame.length + " chiffres");
             logger.info("Le joueur saisit : " + nb);
             
             r = Engine.make_string(x, nb);
-            System.out.println("Résultat : " + r);
             logger.info("Résultat : " + r);
         } while(!r.equals(result_guess));
-        System.out.println("Gagné !");
         logger.info("Le joueur a gagné !");
 	}
 

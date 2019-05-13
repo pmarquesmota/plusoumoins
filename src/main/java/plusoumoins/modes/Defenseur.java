@@ -13,9 +13,8 @@ public class Defenseur  extends Game {
         String x = "";
         String guess = "";
         String result_guess = MetaGame.getResult();
-        Logger log;
-        
-        log = MetaGame.getLogger();
+        Logger log = MetaGame.getLogger();
+
         log.info("Début du mode défenseur");
         
         x = Choose.choice("Veuillez saisir un nombre secret à " + MetaGame.length + " chiffres");
@@ -23,14 +22,11 @@ public class Defenseur  extends Game {
         
         do {
             guess = Engine.guess(guess, result_string);
-        	System.out.println("l'ordinateur essaie : " + guess);
         	log.info("l'ordinateur essaie : " + guess);
         	
         	result_string = Engine.make_string(x, guess);
-            System.out.println("Résultat : " + result_string);
             log.info("Résultat : " + result_string);
         } while(!result_string.equals(result_guess));
-        System.out.println("Gagné !");
         log.info("L'ordinateur a gagné !");
 	}
 }
