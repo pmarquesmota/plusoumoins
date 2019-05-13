@@ -2,10 +2,10 @@ package plusoumoins.modes;
 
 import org.apache.logging.log4j.Logger;
 
-import plusoumoins.Choose;
-import plusoumoins.Engine;
-import plusoumoins.Game;
-import plusoumoins.MetaGame;
+import plusoumoins.cli.Choose;
+import plusoumoins.engine.Engine;
+import plusoumoins.meta.Game;
+import plusoumoins.meta.MetaGame;
 
 public class Duel  extends Game {
 	String player_secret = "";

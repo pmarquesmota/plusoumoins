@@ -1,4 +1,4 @@
-package plusoumoins;
+package plusoumoins.exception;
 
 public class FichierConfigurationException extends Exception {
 	public FichierConfigurationException() {

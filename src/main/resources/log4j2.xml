@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="warn">
+<Configuration status="info">
     <Properties>
         <Property name="basePath">Logs</Property>
     </Properties>
@@ -22,7 +22,7 @@
         <Logger name="main.java" level="debug" additivity="true">
             <appender-ref ref="fileLogger" level="trace" />
         </Logger>
-        <Root level="trace" additivity="false">
+        <Root level="debug" additivity="false">
             <appender-ref ref="console" />
         </Root>
     </Loggers>

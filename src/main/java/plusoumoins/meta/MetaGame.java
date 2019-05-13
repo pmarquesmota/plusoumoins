@@ -1,10 +1,13 @@
-package plusoumoins;
+package plusoumoins.meta;
 
 import java.io.IOException;
 import java.util.HashMap;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import plusoumoins.cli.Choose;
+import plusoumoins.exception.FichierConfigurationException;
+import plusoumoins.config.Parameters;
 import plusoumoins.modes.Challenger;
 import plusoumoins.modes.Defenseur;
 import plusoumoins.modes.Duel;

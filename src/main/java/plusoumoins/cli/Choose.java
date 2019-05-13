@@ -1,4 +1,6 @@
-package plusoumoins;
+package plusoumoins.cli;
+
+import plusoumoins.meta.MetaGame;
 
 import java.util.Scanner;
 
@@ -18,7 +20,7 @@ public class Choose {
 		String line = "";
 		String result_match = "";
 		
-        for (int i=0; i<MetaGame.length;i++) {
+        for (int i = 0; i< MetaGame.length; i++) {
         	result_match = result_match + "\\d";
         }
 

@@ -1,4 +1,6 @@
-package plusoumoins;
+package plusoumoins.meta;
+
+import plusoumoins.exception.FichierConfigurationException;
 
 import java.io.IOException;
 
