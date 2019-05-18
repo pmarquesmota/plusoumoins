@@ -1,8 +1,7 @@
-[INFO ] 2019-05-13 16:59:03.682 [main] java - Début du mode duel
-[INFO ] 2019-05-13 16:59:08.128 [main] java - Le nombre secret choisi par le joueur est : 55
-[INFO ] 2019-05-13 16:59:08.128 [main] java - Le nombre secret choisi par l'ordinateur est : 85
-[INFO ] 2019-05-13 16:59:08.128 [main] java - l'ordinateur essaie : 00
-[INFO ] 2019-05-13 16:59:08.144 [main] java - Résultat : ++
-[INFO ] 2019-05-13 16:59:12.166 [main] java - le joueur essaie : 85
-[INFO ] 2019-05-13 16:59:12.166 [main] java - Résultat : ==
-[INFO ] 2019-05-13 16:59:12.181 [main] java - Le joueur a gagné !
+[INFO ] 2019-05-18 11:26:13.938 [main] java - Début du mode Challenger
+[INFO ] 2019-05-18 11:26:16.678 [main] java - Le joueur saisit : 55
+[INFO ] 2019-05-18 11:26:16.680 [main] java - Résultat : --
+[INFO ] 2019-05-18 11:26:23.266 [main] java - Le joueur saisit : 33
+[INFO ] 2019-05-18 11:26:23.266 [main] java - Résultat : --
+[INFO ] 2019-05-18 11:26:26.677 [main] java - Le joueur saisit : 11
+[INFO ] 2019-05-18 11:26:26.677 [main] java - Résultat : +-

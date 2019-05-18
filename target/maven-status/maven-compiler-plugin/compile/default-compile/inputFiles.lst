@@ -1,10 +1,10 @@
-C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\Game.java
-C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\Main.java
 C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\modes\Challenger.java
+C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\engine\Engine.java
+C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\meta\Main.java
+C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\meta\MetaGame.java
+C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\meta\Game.java
 C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\modes\Defenseur.java
-C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\Engine.java
-C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\MetaGame.java
+C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\config\Parameters.java
 C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\modes\Duel.java
-C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\Choose.java
-C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\Parameters.java
-C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\FichierConfigurationException.java
+C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\exception\FichierConfigurationException.java
+C:\Users\Paul\tmp\plusoumoins\src\main\java\plusoumoins\cli\Choose.java

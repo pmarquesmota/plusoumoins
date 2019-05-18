@@ -21,7 +21,9 @@ public class Parameters {
 	public static synchronized HashMap<String, String> getListeParametres() throws IOException, FichierConfigurationException {
 
 		if (null == mymap) {
-		    final InputStream inputStream = new FileInputStream("config.properties");
+            ClassLoader classLoader = Parameters.class.getClassLoader();
+            InputStream inputStream = classLoader.getResourceAsStream("config.properties");
+		    //final InputStream inputStream = new FileInputStream("src/main/resources/config.properties");
 			final Properties properties = new Properties();
 
 			properties.load(inputStream);
