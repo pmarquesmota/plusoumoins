@@ -1,7 +1,8 @@
-[INFO ] 2019-05-18 11:26:13.938 [main] java - DÃ©but du mode Challenger
-[INFO ] 2019-05-18 11:26:16.678 [main] java - Le joueur saisit : 55
-[INFO ] 2019-05-18 11:26:16.680 [main] java - RÃ©sultat : --
-[INFO ] 2019-05-18 11:26:23.266 [main] java - Le joueur saisit : 33
-[INFO ] 2019-05-18 11:26:23.266 [main] java - RÃ©sultat : --
-[INFO ] 2019-05-18 11:26:26.677 [main] java - Le joueur saisit : 11
-[INFO ] 2019-05-18 11:26:26.677 [main] java - RÃ©sultat : +-
+[INFO ] 2019-05-20 11:43:09.401 [main] java - Début du mode Challenger
+[INFO ] 2019-05-20 11:43:14.247 [main] java - Le joueur saisit : 55
+[INFO ] 2019-05-20 11:43:14.247 [main] java - Résultat : --
+[INFO ] 2019-05-20 11:43:18.899 [main] java - Le joueur saisit : 33
+[INFO ] 2019-05-20 11:43:18.899 [main] java - Résultat : -+
+[INFO ] 2019-05-20 11:43:22.510 [main] java - Le joueur saisit : 24
+[INFO ] 2019-05-20 11:43:22.510 [main] java - Résultat : ==
+[INFO ] 2019-05-20 11:43:22.510 [main] java - Le joueur a gagné !
