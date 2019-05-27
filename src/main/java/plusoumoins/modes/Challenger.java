@@ -15,26 +15,22 @@ public class Challenger extends Game {
 	public void run() {
         String r = "";
         String nb = "";
-        String x = "";
         String result_guess = "";
         Logger logger = MetaGame.getLogger();
-        
+        String computer_secret = Engine.getSecret();
+
         logger.info("Début du mode Challenger");
         result_guess = MetaGame.getResult();
-       
-        Random rand = new Random();
-        for (int i = 0; i<MetaGame.length; i++) {
-        	x = x + Integer.toString(rand.nextInt(9));
-        }
+
         if(MetaGame.dev) {
-            logger.info("Le nombre secret choisi par l'ordinateur est : " + x);
+            logger.info("Le nombre secret choisi par l'ordinateur est : " + computer_secret);
         }
 
         do {
             nb = Choose.choice("Veuillez saisir un nombre à " + MetaGame.length + " chiffres");
             logger.info("Le joueur saisit : " + nb);
             
-            r = Engine.make_string(x, nb);
+            r = Engine.make_string(computer_secret, nb);
             logger.info("Résultat : " + r);
         } while(!r.equals(result_guess));
         logger.info("Le joueur a gagné !");
