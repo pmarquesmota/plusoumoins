@@ -3,7 +3,6 @@ package plusoumoins.modes;
 import org.apache.logging.log4j.Logger;
 
 import plusoumoins.cli.Choose;
-import plusoumoins.engine.Engine;
 import plusoumoins.meta.Game;
 import plusoumoins.meta.MetaGame;
 
@@ -25,7 +24,7 @@ public class Duel  extends Game {
         player_secret = Choose.choice("Veuillez saisir un nombre secret à " + MetaGame.length + " chiffres");
         log.info("Le nombre secret choisi par le joueur est : " + player_secret);
         
-        computer_secret = Engine.getSecret();
+        computer_secret = getSecret();
         if(MetaGame.dev) {
 			log.info("Le nombre secret choisi par l'ordinateur est : " + computer_secret);
         }
@@ -37,10 +36,10 @@ public class Duel  extends Game {
 	}
 
 	private void computer_play() {
-		computer_guess = Engine.guess(computer_guess, computer_result_string);
+		computer_guess = guess(computer_guess, computer_result_string);
         log.info("l'ordinateur essaie : " + computer_guess);
         
-    	computer_result_string = Engine.make_string(player_secret, computer_guess);
+    	computer_result_string = make_string(player_secret, computer_guess);
     	
         log.info("Résultat : " + computer_result_string);
 	}
@@ -48,7 +47,7 @@ public class Duel  extends Game {
 	private void player_play() {
         player_guess = Choose.choice("Veuillez saisir un nombre à " + MetaGame.length + " chiffres");
         log.info("le joueur essaie : " + player_guess);
-        player_result_string = Engine.make_string(computer_secret, player_guess);
+        player_result_string = make_string(computer_secret, player_guess);
         log.info("Résultat : " + player_result_string);
 	}
 	
