@@ -1,8 +1,19 @@
 package plusoumoins.meta;
 
+import org.apache.logging.log4j.Logger;
+
 import java.util.Random;
 
 public abstract class Game {
+	public String player_result_string = "";
+	public String computer_result_string = "";
+	public String computer_secret = getSecret();
+	public String player_secret = "";
+	public String result_guess = MetaGame.getResult();
+	public String player_guess = "";
+	public String computer_guess = "";
+	public Logger logger = MetaGame.getLogger();
+
 	public static String guess(String g, String resultat) {
 		String guess_digit;
 		char result_letter;
