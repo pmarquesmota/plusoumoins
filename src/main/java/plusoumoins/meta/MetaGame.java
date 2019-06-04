@@ -45,22 +45,34 @@ public class MetaGame {
 	
 	public static void run() throws IOException, FichierConfigurationException {
 		init_variables();
+		boolean play = true;
+		int mode = 0;
+		int choix = 2;
 
-		int mode = Choose.menu("Choisissez votre mode\n1 - challenger\n2 - défenseur\n3 - duel", 1, 3);
-		Game game = null;
+		do {
+			if(choix == 2) {
+				mode = Choose.menu("Choisissez votre mode\n1 - challenger\n2 - défenseur\n3 - duel", 1, 3);
+			}
+			Game game = instancieMode(mode);
+			game.run();
+			choix = Choose.menu("Le jeu est terminé. Voulez-vous\n1 - rejouer au même mode\n2 - lancer un autre mode (retour à l'écran de choix du début)\n3 - quitter l'application", 1, 3);
+			switch (choix) {
+				case 3:
+					play=false;
+					break;
+			}
+		} while(play == true);
+	}
 
+	public static Game instancieMode(int mode){
 		switch (mode) {
-		case 1:
-			game = new Challenger();
-			break;
-		case 2:
-			game = new Defenseur();
-			break;
-		case 3:
-			game = new Duel();
-			break;
+			case 1:
+				return new Challenger();
+			case 2:
+				return new Defenseur();
+			case 3:
+				return new Duel();
 		}
-
-		game.run();
+		return new Challenger();
 	}
 }
