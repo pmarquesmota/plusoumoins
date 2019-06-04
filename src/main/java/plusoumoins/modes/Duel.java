@@ -1,7 +1,5 @@
 package plusoumoins.modes;
 
-import org.apache.logging.log4j.Logger;
-
 import plusoumoins.cli.Choose;
 import plusoumoins.meta.Game;
 import plusoumoins.meta.MetaGame;
