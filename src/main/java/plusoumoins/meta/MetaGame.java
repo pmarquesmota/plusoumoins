@@ -56,10 +56,8 @@ public class MetaGame {
 			Game game = instancieMode(mode);
 			game.run();
 			choix = Choose.menu("Le jeu est terminé. Voulez-vous\n1 - rejouer au même mode\n2 - lancer un autre mode (retour à l'écran de choix du début)\n3 - quitter l'application", 1, 3);
-			switch (choix) {
-				case 3:
-					play=false;
-					break;
+			if (choix == 3) {
+				play = false;
 			}
 		} while(play == true);
 	}
