@@ -13,7 +13,7 @@ public class Parameters {
 	private static HashMap<String, String> mymap;
 
 	/**
-	 * getListeParametres
+	 * getListeParametres charge le fichier config.properties dans une table de hash
 	 * 
 	 * @return mymap
 	 * @throws IOException
@@ -23,8 +23,7 @@ public class Parameters {
 		if (null == mymap) {
             ClassLoader classLoader = Parameters.class.getClassLoader();
             InputStream inputStream = classLoader.getResourceAsStream("config.properties");
-		    //final InputStream inputStream = new FileInputStream("src/main/resources/config.properties");
-			final Properties properties = new Properties();
+            Properties properties = new Properties();
 
 			properties.load(inputStream);
 			inputStream.close();

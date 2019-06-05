@@ -10,8 +10,7 @@ public class Choose {
 	 * between the minimum and the maximum.
 	 * 
 	 * @param question The question asked.
-	 * @param minimum  The minimum number that can be accepted.
-	 * @param maximum  The maximum number that can be accepted.
+	 * @param defenseur le jeu est en mode défenseur
 	 * @return The number chosen by the user.
 	 */
 	public static String choice(String question, boolean defenseur) {

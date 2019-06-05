@@ -27,6 +27,7 @@ public class MetaGame {
 		MetaGame.logger = logger;
 	}
 
+	/* construit la chaine de caractères qui sera un résultat gagnant*/
 	public static String getResult() {
 		String r = "";
 
@@ -35,7 +36,8 @@ public class MetaGame {
 		}
 		return r;
 	}
-	
+
+	/* initialise les variables globales */
 	public static void init_variables() throws IOException, FichierConfigurationException {
 		parameters = Parameters.getListeParametres();
 		length = Integer.parseInt(parameters.get("length"));
@@ -43,7 +45,8 @@ public class MetaGame {
 		tries = Integer.parseInt(parameters.get("tries"));
 		logger = LogManager.getLogger("main.java");
 	}
-	
+
+	/* lance le jeu */
 	public static void run() throws IOException, FichierConfigurationException {
 		init_variables();
 		boolean play = true;
@@ -63,6 +66,7 @@ public class MetaGame {
 		} while(play == true);
 	}
 
+	/* instancie le bon objet suivant le choix du joueur */
 	public static Game instancieMode(int mode){
 		switch (mode) {
 			case 1:

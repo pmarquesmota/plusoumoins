@@ -8,6 +8,9 @@ import plusoumoins.cli.Choose;
 
 public class Challenger extends Game {
 
+    /*
+        Lance le jeu
+     */
 	public void run() {
         logger.info("Début du mode Challenger");
 

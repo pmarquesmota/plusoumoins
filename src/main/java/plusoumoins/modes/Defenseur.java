@@ -7,6 +7,9 @@ import plusoumoins.meta.Game;
 import plusoumoins.meta.MetaGame;
 
 public class Defenseur  extends Game {
+    /*
+        lance le jeu en mode défenseur
+     */
 	public void run() {
         Logger log = MetaGame.getLogger();
 
