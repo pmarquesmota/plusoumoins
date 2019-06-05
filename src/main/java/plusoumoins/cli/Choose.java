@@ -14,14 +14,19 @@ public class Choose {
 	 * @param maximum  The maximum number that can be accepted.
 	 * @return The number chosen by the user.
 	 */
-	public static String choice(String question) {
+	public static String choice(String question, boolean defenseur) {
 		Scanner s = new Scanner(System.in);
 
 		String line = "";
 		String result_match = "";
-		
+		String match_singleton;
+		if(defenseur){
+			match_singleton = "[=+-]";
+		} else {
+			match_singleton = "\\d";
+		}
         for (int i = 0; i< MetaGame.length; i++) {
-        	result_match = result_match + "\\d";
+        	result_match = result_match + match_singleton;
         }
 
 		do {

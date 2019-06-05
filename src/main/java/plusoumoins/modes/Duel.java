@@ -9,7 +9,7 @@ public class Duel  extends Game {
 	public void run() {
 		logger.info("Début du mode duel");
 		
-        player_secret = Choose.choice("Veuillez saisir un nombre secret à " + MetaGame.length + " chiffres");
+        player_secret = Choose.choice("Veuillez saisir un nombre secret à " + MetaGame.length + " chiffres", false);
         logger.info("Le nombre secret choisi par le joueur est : " + player_secret);
         
         if(MetaGame.dev) {
@@ -32,7 +32,7 @@ public class Duel  extends Game {
 	}
 
 	private void player_play() {
-        player_guess = Choose.choice("Veuillez saisir un nombre à " + MetaGame.length + " chiffres");
+        player_guess = Choose.choice("Veuillez saisir un nombre à " + MetaGame.length + " chiffres", false);
         logger.info("le joueur essaie : " + player_guess);
         player_result_string = make_string(computer_secret, player_guess);
         logger.info("Résultat : " + player_result_string);

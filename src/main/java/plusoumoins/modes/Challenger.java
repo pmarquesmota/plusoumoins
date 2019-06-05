@@ -16,7 +16,7 @@ public class Challenger extends Game {
         }
 
         do {
-            player_guess = Choose.choice("Veuillez saisir un nombre à " + MetaGame.length + " chiffres");
+            player_guess = Choose.choice("Veuillez saisir un nombre à " + MetaGame.length + " chiffres", false);
             logger.info("Le joueur saisit : " + player_guess);
 
             computer_result_string = make_string(computer_secret, player_guess);
