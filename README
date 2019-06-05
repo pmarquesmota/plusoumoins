@@ -1,31 +1,8 @@
 #Projet
-Le code dans Main.java lance le programme contenu dans la classe MetaGame. Celle-ci initialise les variables et
-les paramètres de l'application en utilisant la classe parameters. Cette dernière initialise la gestion du fichier
-config.properties en le chargeant dans une table de hash et en levant une exception de la classe
-FichierConfigurationException si le fichier n'existe pas. Enfin, le code de la classe MetaGame charge la bonne méthode
-d'une des sous-classe de Game en utilisant le polymorphisme : chaque sous-classe possède une méthode run.
-Le code de MetaGame instancie une des sous-classes de Game puis appelle la méthode run.
+Ce programme implémente le projet 3 du parcours Développeur d'application - Java de OpenClassroms
 
-Chaque sous-classe de Game hérite de ses méthodes et de ses variables. Elles l'utilisent pour gérer le moteur de jeu :
-* ce que l'ordinateur devine dans guess() qui appelle guess_digit pour deviner chaque chiffre.
-* la comparaison entre ce qu'on devine et ce qu'on doit deviner, la méthode make_string() construit une chaine du
-  genre "+-==" et compare compare chaque chiffre de la chaine de caractères
-* la construction de la chaine de caractères qui représente le nombre secret de l'ordinateur
-
-La classe Choose implémente les interactions avec l'utilisateur
-
-#L'utilitaire maven
-##Installation des dépendances
-Maven est un programme qui permet entre autre d'installer les dépendances nécéssaires au bon fonctionnement de
-l'application. Ici, il s'agit de la bibliothèque log4j du projet apache, qui nous permet de gérer les logs.
-Ces dépendances sont spécifiées dans un fichier pom.xml placé à la racine du projet. Les balises <dependancies> à
-l'intérieur de la balise <dependancy> spécifient les bibliothèques à télécharger et installer
-
-##Lancement de l'application
+#Lancement de l'application
 
 La commande pour lancer l'application est :
 
 `java -jar target/plusoumoins-1.0-SNAPSHOT.jar`
-
-Le .jar est généré par maven au moyen du fichier pom.xml. La balise <manifest> du plugin maven-jar-plugin indique au
-moteur de build quelle est la classe et le package qui contient la méthode main() qui doit être lancée au démarrage.
