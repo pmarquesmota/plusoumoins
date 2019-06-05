@@ -41,7 +41,7 @@ public class Duel  extends Game {
 	
 	private void show_winner() {
 	    if(player_tries == MetaGame.tries) {
-            logger.info("Vous avez tous les deux perdu !");
+            logger.info("Nombre d'essais maximal dépassé. Vous avez tous les deux perdu !");
         }else if(player_result_string.equals(result_guess)) {
         	logger.info("Le joueur a gagné !");
         } else {

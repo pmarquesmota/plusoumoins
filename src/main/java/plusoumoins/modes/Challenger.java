@@ -24,7 +24,7 @@ public class Challenger extends Game {
             logger.info("Résultat : " + computer_result_string);
         } while(!computer_result_string.equals(result_guess) && player_tries<MetaGame.tries);
         if (player_tries == MetaGame.tries){
-            logger.info("Le joueur a perdu !");
+            logger.info("Nombre d'essais maximal dépassé. Le joueur a perdu !");
         } else {
             logger.info("Le joueur a gagné !");
         }

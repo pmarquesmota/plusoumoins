@@ -24,7 +24,7 @@ public class Defenseur  extends Game {
             log.info("Résultat : " + player_result_string);
         } while(!(player_result_string.equals(result_guess) || player_tries == MetaGame.tries));
         if(player_tries == MetaGame.tries){
-            log.info("L'ordinateur a perdu !");
+            log.info("Nombre d'essais maximal dépassé. L'ordinateur a perdu !");
         } else {
             log.info("L'ordinateur a gagné !");
         }
