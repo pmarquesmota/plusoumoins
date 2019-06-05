@@ -34,7 +34,7 @@ public class Parameters {
 			for (Entry<Object, Object> entry : properties.entrySet()) {
 				mymap.put((String) entry.getKey(), (String) entry.getValue());
 			}
-			if(null == mymap.get("dev") || null == mymap.get("length") ) {
+			if(null == mymap.get("dev") || null == mymap.get("length") ||null ==  mymap.get("tries") ) {
 				throw new FichierConfigurationException();
 			}
 		}

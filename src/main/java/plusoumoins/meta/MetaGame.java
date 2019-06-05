@@ -14,7 +14,7 @@ import plusoumoins.modes.Duel;
 
 public class MetaGame {
 	public static int length;
-	public static int mastermind_width = 3;
+	public static int tries;
 	public static HashMap<String, String> parameters;
 	public static boolean dev;
 	public static Logger logger;
@@ -40,6 +40,7 @@ public class MetaGame {
 		parameters = Parameters.getListeParametres();
 		length = Integer.parseInt(parameters.get("length"));
 		dev = Boolean.parseBoolean(parameters.get("dev"));
+		tries = Integer.parseInt(parameters.get("tries"));
 		logger = LogManager.getLogger("main.java");
 	}
 	

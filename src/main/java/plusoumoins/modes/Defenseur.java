@@ -16,12 +16,17 @@ public class Defenseur  extends Game {
         log.info("Le nombre secret choisi par le joueur est : " + player_secret);
         
         do {
+            player_tries++;
             computer_guess = guess(computer_guess, player_result_string);
         	log.info("l'ordinateur essaie : " + computer_guess);
 
             player_result_string = Choose.choice("Veuillez donner le résultat de la comparaison avec votre chiffre secret", true);
             log.info("Résultat : " + player_result_string);
-        } while(!player_result_string.equals(result_guess));
-        log.info("L'ordinateur a gagné !");
+        } while(!(player_result_string.equals(result_guess) || player_tries == MetaGame.tries));
+        if(player_tries == MetaGame.tries){
+            log.info("L'ordinateur a perdu !");
+        } else {
+            log.info("L'ordinateur a gagné !");
+        }
 	}
 }

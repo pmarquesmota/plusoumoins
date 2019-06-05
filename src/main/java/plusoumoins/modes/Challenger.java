@@ -16,13 +16,18 @@ public class Challenger extends Game {
         }
 
         do {
+            player_tries++;
             player_guess = Choose.choice("Veuillez saisir un nombre à " + MetaGame.length + " chiffres", false);
             logger.info("Le joueur saisit : " + player_guess);
 
             computer_result_string = make_string(computer_secret, player_guess);
             logger.info("Résultat : " + computer_result_string);
-        } while(!computer_result_string.equals(result_guess));
-        logger.info("Le joueur a gagné !");
+        } while(!computer_result_string.equals(result_guess) && player_tries<MetaGame.tries);
+        if (player_tries == MetaGame.tries){
+            logger.info("Le joueur a perdu !");
+        } else {
+            logger.info("Le joueur a gagné !");
+        }
 	}
 
 }

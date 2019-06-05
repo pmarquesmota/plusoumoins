@@ -13,6 +13,7 @@ public abstract class Game {
 	public String player_guess = "";
 	public String computer_guess = "";
 	public Logger logger = MetaGame.getLogger();
+	public int player_tries = 0;
 
 	public static String guess(String g, String resultat) {
 		String guess_digit;

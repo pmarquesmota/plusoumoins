@@ -16,9 +16,10 @@ public class Duel  extends Game {
 			logger.info("Le nombre secret choisi par l'ordinateur est : " + computer_secret);
         }
         do {
+            player_tries++;
         	computer_play();
         	player_play();
-        } while(!(computer_result_string.equals(result_guess) || player_result_string.equals(result_guess)));
+        } while(!(computer_result_string.equals(result_guess) || player_result_string.equals(result_guess) || player_tries == MetaGame.tries));
         show_winner();
 	}
 
@@ -39,7 +40,9 @@ public class Duel  extends Game {
 	}
 	
 	private void show_winner() {
-        if(player_result_string.equals(result_guess)) {
+	    if(player_tries == MetaGame.tries) {
+            logger.info("Vous avez tous les deux perdu !");
+        }else if(player_result_string.equals(result_guess)) {
         	logger.info("Le joueur a gagné !");
         } else {
         	logger.info("L'ordinateur a gagné !");
