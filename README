@@ -5,4 +5,4 @@ Ce programme implémente le projet 3 du parcours Développeur d'application - Ja
 
 La commande pour lancer l'application est :
 
-`java -jar target/plusoumoins-1.0-SNAPSHOT.jar`
+`java -Dfile.encoding=UTF-8 -jar target/plusoumoins-1.0-SNAPSHOT.jar`
